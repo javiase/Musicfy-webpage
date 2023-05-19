@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Martin, Alvaro y Javi Web</title>
+        <link rel="stylesheet" type="text/css" id='claroscuro' href="style/style_logged_in.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--LIBRERIA PARA ICONOS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Diseñamos toda la pagina utilizando un grid-->
+        <div class="grid">
+
+            <!--Esta es la columna derecha (entera)-->
+            <div class="right"> 
+                <div class="header">
+                    <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                        <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                        <!--Esto es el titulo-->
+                        <h2 id="titulo">Musicfy</h2>
+                    </div>
+                    <div class="header-right">
+                        <h3 class="btn-buscar"><a href="buscador.html">Buscador</a></h3>
+                        <!--Header de la columna derecha-->
+                        <div class="profile" onclick="desplegable()">
+                            <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                            <ul id="nav">
+                                <li ><a href="cuenta.html">Cuenta</a></li>
+                                <li ><a href="perfil.html">Perfil</a></li>
+                                <li><a href="ver_Listas.html">Mis Listas</a></li>
+                                <li onclick="alertLogOut()"><a id="cerrar-sesion" >Cerrar sesión</a></li>
+                                <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/">Politica de Privacidad</a></li>
+                                <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Politica de Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <!--Aqui tenemos el titulo de la primera fila de canciones-->
+                <div class="torso">
+                    <h2 class="tituloSongs">Sobre C. tangana</h2>
+                    <!--Esto es una fila de canciones--> 
+                    <div class="sobreArtista">
+                        <!--Esto es una cancion-->
+                        <div class="fotoArtista">
+                            <!--La imagen de la cancion-->
+                            <img src="images/artistas/Ctangana/Ctangana.jpg" class="fotoBio" name="KanyeWestFoto", alt = "KanyeWestFoto">
+                            <!--El audio para reproducir dicha cancion-->
+                        </div>
+                        <div class="biografia">
+                            <p>C. Tangana ha superado los 8 millones de oyentes mensuales en la PLataforma.</p>
+                            <p>Es la primera vez que el cantante lo consigue en su carrera.</p>
+                            <p>Actualmente es el sexto mejor registro centrándonos en artistas españoles</p>
+                            <p>tras Enrique Iglesias, Rosalía, Pablo Alborán, Alejandro Sanz y Aitana.</p>
+                            <p>Tras su disco "El Madrileño" se termino de consagrar como uno de los maximos</p>
+                            <p>Representantes del genero musical en españa.</p>
+
+                            <p>"... Demasiadas mujeres" --- C Tangana</p>
+                        </div>
+                    </div>
+                    <!--Esto es la segunda fila de canciones repitiendo la estructura de la primera-->
+                    <!--Titulo-->
+                    <h2 class="tituloSongs">Álbumes</h2> 
+                    <!--Fila de canciones-->
+                    <div class="songs">  
+                        <!--cancion objeto-->                     
+                        <div class="cancion">
+                            <!--imagen de la cancion-->
+                            <img src="https://media.pitchfork.com/photos/5b1160a8d8c21c49d0ae4eef/1:1/w_600/Kanye%20Ye.png" class="img" name="Ye" alt = "Kanye West">
+                            <div class="caption">Ye</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://images.genius.com/680d4985b1fccdf554ab887abb63a453.1000x1000x1.jpg" class="img" name="Graduation" alt = "Kanye West">
+                            <div class="caption">El Madrileño(La Sobremesa)</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://m.media-amazon.com/images/I/31cMawNfdCL._SX355_.jpg" class="img" name="808s & Heartbreak" alt = "Kanye West">
+                            <div class="caption">Avida Dollars</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://m.media-amazon.com/images/I/81EkIPgCYkL._SL1400_.jpg" class="img" name="Watch the Throne" alt = "Kanye West">
+                            
+                            <div class="caption">Yate</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://m.media-amazon.com/images/I/517MxAn1xOL._SY355_.jpg" class="img" name="Late Registration" alt = "Kanye West">
+                           
+                            <div class="caption">El madrileño</div>
+
+                        </div>
+                    </div>
+                    <!--Esto es la tercera fila de cancion con la misma estructura que las previas-->
+                    <!--titulo-->
+                    <h2 class="tituloSongs">Sus mejores canciones</h2>
+                    <!--Fila de canciones-->
+                    <div class="songs">
+                        <!--Cancion obj-->
+                        <div class="cancion">
+                            <img src="https://i1.sndcdn.com/artworks-SYwRLKnfbcsl-0-t500x500.jpg" class="img" name="Last Call" alt = "Kanye West">
+                            <button class="PPbutton" onclick="playSong('0', 'Last Call')">▶</button>
+                            <audio class="audio" src="images/0.mp3"></audio>
+                            <div class="caption">Demasiadas Mujeres</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i1.sndcdn.com/artworks-000489408738-c3tgfc-t500x500.jpg" class="img" name="Waves"  alt = "Kanye West"> 
+                            <button class="PPbutton" onclick="playSong('1', 'Waves')">▶</button>
+                            <audio class="audio" src="images/1.mp3"></audio>
+                            <div class="caption">Tu Me Dejaste De Querer</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://www.indieshuffle.com/bundles/webbundle/images/artwork/thumb_500_500/1455752314.7554_w.jpg" class="img" name="Wolves"  alt = "Kanye West">
+                            <button class="PPbutton" onclick="playSong('2', 'Wolves')">▶</button>
+                            <audio class="audio" src="images/daydreaming.mp3"></audio>
+                            <div class="caption">Los tontos</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://images.genius.com/680d4985b1fccdf554ab887abb63a453.1000x1000x1.jpg" class="img" name="Homecoming"  alt = "Kanye West">
+                            <button class="PPbutton" onclick="playSong('3', 'Homecoming')">▶</button>
+                            <audio class="audio" src="images/2.mp3"></audio>
+                            <div class="caption">Homecoming</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b27320db1c89a71f8178114753d0" class="img" name="POWER"  alt = "Kanye West">
+                            <button class="PPbutton" onclick="playSong('4', 'POWER')">▶</button>
+                            <audio class="audio" src="images/3.mp3"></audio>
+                            <div class="caption">POWER</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer">
+                <div id="cancionSonando">
+                    <div id="nowPlaying">Now Playing:</div>
+                        <p id="nameOfSong"></p>
+                </div>
+                <div id="controlesPlay">
+                    <div id="parteArriba">
+                        <button id="footerButton">▶</button>
+                    </div>
+                    <div id="parteAbajo">
+                        <input type="range" id="progresoCancion" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+                <div id="controlesSonido">
+                    <div id="sonidoArriba">
+                        <img src="https://w7.pngwing.com/pngs/363/907/png-transparent-computer-icons-volume-others-text-logo-share-icon-thumbnail.png" id="imagenVolumen">
+                    </div>
+                    <div id="sonidoAbajo">
+                        <input type="range" id="volumenCancion" onchange="cambiarVolumen()" step="0.05" min="0" max="1" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/reproductor_artistas.js"></script>
+    
+
+
+</html>

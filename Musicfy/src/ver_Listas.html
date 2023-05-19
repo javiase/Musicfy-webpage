@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title id = "1"></title>
+    <link rel="stylesheet" type="text/css" href="style/style_logged_in.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Diseñamos toda la pagina utilizando un grid-->
+    <div class="grid-no-footer">
+        <!--Esto es el div de la columna izquierda-->
+        <!--Esta es la columna derecha (entera)-->
+        <div class="header">
+            <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                <!--Esto es el titulo-->
+                <h2 id="titulo">Musicfy</h2>
+            </div>
+            <div class="header-right">
+                <h3 class="btn-buscar"><a href="buscador.html" id = "2"></a></h3>
+                <!--Header de la columna derecha-->
+                <div class="profile" onclick="desplegable()">
+                    <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                    <ul id="nav">
+                        <li ><a href="cuenta.html" id = "3"></a></li>
+                        <li ><a href="perfil.html" id = "4"></a></li>
+                        <li><a href="ver_Listas.html" id = "5"></a></li>
+                        <li onclick="alertLogOut()"><a id="cerrar-sesion" ></a></li>
+                        <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/" id = "7"></a></li>
+                        <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop" id = "8"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="torso-mensaje"> <!-- FORMULARIO -->
+            
+            <div id="form-log-in" class = "verLista-caja">
+                <div class="verLista-header">
+                    <h3 id = "13"></h3>
+                    <div class="btn-crearLista" onclick="goTo_CrearLista()" id = "14"></div>
+                </div>
+                <form>
+                    <input id="searchTerm" class="verLista-searchbox" placeholder = "Buscar" type="text" onkeyup="doSearch()" />
+                    <table id ="tablaTotalCanciones">
+                        <thead>
+                            <tr>
+                                <th id = "15"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div  class="idiomas">
+            <a href="" id = "11" onclick = "artistasCambioIdioma('Español')"></a></li>
+            <a href="" id = "12" onclick = "artistasCambioIdioma('Ingles')"></a></li>
+        </div>
+        <div class="footer-mensaje">
+            <h3 id = "10"></h3>
+        </div>
+    </div>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/ver_Listas.js"></script>
+</body>
+</html>

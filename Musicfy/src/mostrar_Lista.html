@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Lista</title>
+    <link rel="stylesheet" type="text/css" href="style/style_logged_in.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Diseñamos toda la pagina utilizando un grid-->
+    <div class="grid-no-footer">        
+        <div class="header">
+            <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                <!--Esto es el titulo-->
+                <h2 id="titulo">Musicfy</h2>
+            </div>
+            <div class="header-right">
+                <h3 class="btn-buscar"><a href="buscador.html">Buscador</a></h3>
+                <!--Header de la columna derecha-->
+                <div class="profile" onclick="desplegable()">
+                    <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                    <ul id="nav">
+                        <li ><a href="cuenta.html">Cuenta</a></li>
+                        <li ><a href="perfil.html">Perfil</a></li>
+                        <li><a href="ver_Listas.html">Mis Listas</a></li>
+                        <li onclick="alertLogOut()"><a id="cerrar-sesion" >Cerrar sesión</a></li>
+                        <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/">Politica de Privacidad</a></li>
+                        <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Politica de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="torso"> <!-- FORMULARIO -->
+            <div class="migas">
+                <a href="index_logged_in.html">Inicio > </a><a href="perfil.html">Perfil > </a><a href="ver_Listas.html">Mis Listas > </a><a href="mostrar_Lista.html">Lista</a>
+            </div>
+            <div id="form-log-in" class = "mostrarLista-caja">
+                <h3 id = "tituloListaMostrada"></h3>
+                <form>
+                    <input id="searchTerm" class="mostrarLista-field" placeholder = "Buscar" type="text" onkeyup="doSearch()" />
+                
+                    <table id ="tablaTotalCanciones">
+                        <thead>
+                            <tr>
+                                <th>Autor</th>
+                                <th>Titulo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="footer-mensaje">
+            <h3>Escucha con las listas de MusicFy!</h3>
+        </div>
+    </div>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/mostrar_Lista.js"></script>
+</body>
+</html>

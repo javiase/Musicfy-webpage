@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title id="1"></title>
+        <link rel="stylesheet" type="text/css" id='claroscuro' href="style/style_logged_in.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Diseñamos toda la pagina utilizando un grid-->
+        <div class="grid-no-footer">
+            <!--Esto es el div de la columna izquierda-->
+
+            <!--Esta es la columna derecha (entera)-->
+            <div class="right"> 
+                <!--Esto es la cabecera con sign in y sign up-->
+                <div class="header">
+                    <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                        <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                        <!--Esto es el titulo-->
+                        <h2 id="titulo">Musicfy</h2>
+                    </div>
+                    <div class="header-right">
+                        <h3 class="btn-buscar"><a href="buscador.html" id="2"></a></h3>
+                        <!--Header de la columna derecha-->
+                        <div class="profile" onclick="desplegable()">
+                            <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                            <ul id="nav">
+                                <li ><a href="cuenta.html" onclick="ponerCuentaOriginal()" id="3"></a></li>
+                                <li ><a href="perfil.html" onclick="ponerCuentaOriginal()" id="4"></a></li>
+                                <li><a href="ver_Listas.html" onclick="ponerCuentaOriginal()" id="5"></a></li>
+                                <li onclick="alertLogOut()"><a id="cerrar-sesion" >Cerrar sesión</a></li>
+                                <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/" id="7"></a></li>
+                                <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop" id="8"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <!--Aqui tenemos el titulo de la primera fila de canciones-->
+                <div class="torso-mensaje">
+                    <div class="migas">
+                        <a href="index_logged_in.html">Inicio > </a><a href="perfil.html">Perfil</a>
+                    </div>
+                    <div class="idiomas">
+                        <a href="" id = "11" onclick = "artistasCambioIdioma('Español')"></a></li>
+                        <a href="" id = "12" onclick = "artistasCambioIdioma('Ingles')"></a></li>
+                    </div>
+                    <h1 class="tituloSongs"></h1>
+                    <!--Esto es una fila de canciones--> 
+                    <div class="torso-perfil">
+                        <!--Esto es una cancion-->
+                        <div class="perfil-elem">
+                            <!--La imagen de la carpeta-->
+                            <img class="img-perfil" src="images/components/artistas-mas-escuchados.jfif" name="autores_mas_escuchados" onclick = "abrirPag('autores_mas_escuchados')">
+                                <p id="13"></p>
+                        </div>
+                        <div class="perfil-elem">
+                            <img class="img-perfil" src="images/components/canciones-mas-escuchadas.jpg" class="img" name="canciones_mas_escuchadas" onclick = "abrirPag('canciones_mas_escuchadas')">
+                            
+                            <p id="14"></p>
+
+                        </div>
+                        <div class="perfil-elem">
+                            <img class="img-perfil" src="images/components/canciones-fav.jfif" class="img" name="canciones_mg" onclick = "abrirPag('canciones_mg')">
+                            
+                            <p id="15"></p>
+
+                        </div>
+                        
+                        <div class="perfil-elem">
+                            <img class="img-perfil" src="images/components/amigos.png" class="img" name="usuarios" onclick = "abrirPag('usuarios')">
+                            
+                            <p id="16"></p>
+
+                        </div>
+                        <div class="perfil-elem">
+                            <img class="img-perfil" src="images/components/mis-listas.jpg" class="img" name="mis_listas" onclick = "abrirPag('mis_listas')">
+                            
+                            <p id="17"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mensaje">
+                <h3 id="10"></h3>
+            </div>
+        </div>
+    </body>
+    
+    <script src="js/perfil.js"></script>
+    <script src="js/general_logged_in.js"></script>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title id = "1"></title>
+        <link rel="stylesheet" type="text/css" href="style/style_logged_in.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Diseñamos toda la pagina utilizando un grid-->
+        <div class="grid-no-footer">
+            
+            <!--Esta es la columna derecha (entera)-->
+            <div class="right"> 
+                <!--Esto es la cabecera con sign in y sign up-->
+                <div class="header">
+                    <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                        <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                        <!--Esto es el titulo-->
+                        <h2 id="titulo">Musicfy</h2>
+                    </div>
+                    <div class="header-right">
+                        <h3 class="btn-buscar"><a href="buscador.html" id = "2"></a></h3>
+                        <!--Header de la columna derecha-->
+                        <div class="profile" onclick="desplegable()">
+                            <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                            <ul id="nav">
+                                <li ><a href="cuenta.html" id = "3"></a></li>
+                                <li ><a href="perfil.html" id = "4"></a></li>
+                                <li onclick="alertLogOut()"><a id="cerrar-sesion" ></a></li>
+                                <li><a href="ver_Listas.html" id = "5"></a></li>
+                                <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/" id = "7"></a></li>
+                                <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop" id = "8"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="torso"> <!-- FORMULARIO -->
+                    <div class="migas">
+                        <a href="index_logged_in.html">Inicio ></a> <a href="cuenta.html">Cuenta</a>
+                    </div>
+                    <div id="form-log-in" class="cuenta-caja">
+                        <h4 id = "13"></h4>
+                        <form action="" name="formulario" method="get">
+                            <div id  = "divUsuario">
+                                <div class="cuenta-elem">
+                                    <p id = "18"></p>
+                                </div>
+                                <div id = printImgPerfil></div>
+                                <input type="file" id="img" name="img" accept="image/*">  
+                                <input class="cuenta-button" type="button" name="guardarCambios" id="editarCorreo" value="editar" onclick="guardar('imagen')">
+                                
+                                <div class="cuenta-elem">
+                                    <p id = "14"></p>
+                                    <p id = "printUsuario"></p>
+                                </div>
+                                <input class="cuenta-field" type="text" name="editarUsuario" id="editarUsuario" value ="">
+                                <input class="cuenta-button" type="button" name="guardarCambios" id="editarUsu" value="guardar" onclick="guardar('usuario')">
+
+                                <div class="cuenta-elem">
+                                    <p id = "15"></p>
+                                    <p id = "printContraseña"></p>
+                                </div>
+                                <input class="cuenta-field" type="text" name="editarContraseña" id="editarContraseña" value ="">
+                                <input class="cuenta-button" type="button" name="guardarCambios" id="editarcontra" value="guardar" onclick="guardar('contraseña')">
+
+                                <div class="cuenta-elem">
+                                    <p id = "16"></p>
+                                    <p id = "printNombreApellidos"></p>
+                                </div>
+                                <input class="cuenta-field" type="text" name="editarNombreApellidos" id="editarNombreApellidos" value ="">
+                                <input class="cuenta-button" type="button" name="guardarCambios" id="editarNombre" value="guardar" onclick="guardar('nombre')">
+
+                                <div class="cuenta-elem">
+                                    <p id = "17"></p>
+                                    <p id = "printCorreo"></p>
+                                </div>
+                                <input class="cuenta-field" type="text" name="editarCorreo" id="editarCorreo" value ="">
+                                <input class="cuenta-button" type="button" name="guardarCambios" id="editarCorreo" value="guardar" onclick="guardar('correo')">
+
+                                
+                            </div>
+                            <div class="idiomas">
+                                <a href="" id = "11" onclick = "artistasCambioIdioma('Español')"></a></li>
+                                <a href="" id = "12" onclick = "artistasCambioIdioma('Ingles')"></a></li>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-mensaje">
+                <h3 id = "10"></h3>
+            </div>
+        </div>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/cuenta.js"></script>
+    </body>
+</html>

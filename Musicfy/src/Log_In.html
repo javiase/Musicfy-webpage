@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--Diseñamos toda la pagina utilizando un grid-->
+    <div class="grid">
+        <div class="header">
+            <div class="header-left">
+                <div class="profile" onclick="desplegable()">
+                    <img id="pfpp" src="images/components/icono-menu.png" alt="Menu">
+                    <ul id="nav">
+                        <li><a href="">Sobre Musicfy</a></li>
+                        <li><a href="">Soporte técnico</a></li>
+                        <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/">Politica de Privacidad</a></li>
+                        <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Politica de Cookies</a></li>
+                    </ul>
+                </div>
+                <img class="logo" onclick="goTo_Index()" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                <!--Esto es el titulo-->
+                <h2 id="titulo">Musicfy</h2>
+            </div>
+            <div class="header-right">
+                <div class="header-right"> 
+                    <h3 class="sign myButton-sign"><a href="index.html">Volver</a></h3>
+                    <h3 class="sign myButton-sign"><a href="Sign_Up.html">Sign Up</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="torso"> <!-- FORMULARIO -->
+            <div class="migas">
+                <a href="index.html">Inicio > </a><a href="Log_In.html">Log In</a>
+            </div>
+            <div id="form-log-in">
+                <h3>Log In</h3>
+                <form action="" name="formulario" method="get">
+                    <div id  = "divUsuario">
+                        <input class="form-field" type="text" name="username" id="username" maxlength="20" placeholder="Introduzca su Usuario" required>
+                    </div>
+                    <div id  = "divContraseña">
+                        <input class="form-field" type="password" name="password" id="password" maxlength="20" placeholder="Introduzca su Contraseña" required>
+                    </div>
+                    <input class="form-field" type="button" name="btn" id="enviar" value="Enviar" onclick="comprobarDatos()">
+                    <div id="img-g-fb">
+                        <a title = "google" href = "https://www.google.es/"><img id="img-g" src="images/components/Google G Logo.png" alt="Google"></a>
+                        <a title = "facebook" href = "https://www.facebook.com/"> <img id="img-fb" src="images/components/Facebook_logo_(square).png" alt="Facebook"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Esto es el footer con el mensaje pidiendo que se unan.-->
+        <div class="footer-mensaje">
+            <h3>Escucha miles de canciones con Musicfy!</h3>
+        </div>
+    </div>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/log_in.js"></script>
+
+</body>
+</html>

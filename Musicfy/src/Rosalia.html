@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Martin, Alvaro y Javi Web</title>
+        <link rel="stylesheet" type="text/css" id='claroscuro' href="style/style_logged_in.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--LIBRERIA PARA ICONOS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Diseñamos toda la pagina utilizando un grid-->
+        <div class="grid">
+
+            <!--Esta es la columna derecha (entera)-->
+            <div class="right"> 
+                <div class="header">
+                    <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                        <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                        <!--Esto es el titulo-->
+                        <h2 id="titulo">Musicfy</h2>
+                    </div>
+                    <div class="header-right">
+                        <h3 class="btn-buscar"><a href="buscador.html">Buscador</a></h3>
+                        <!--Header de la columna derecha-->
+                        <div class="profile" onclick="desplegable()">
+                            <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                            <ul id="nav">
+                                <li ><a href="cuenta.html">Cuenta</a></li>
+                                <li ><a href="perfil.html">Perfil</a></li>
+                                <li><a href="ver_Listas.html">Mis Listas</a></li>
+                                <li onclick="alertLogOut()"><a id="cerrar-sesion" >Cerrar sesión</a></li>
+                                <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/">Politica de Privacidad</a></li>
+                                <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Politica de Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <!--Aqui tenemos el titulo de la primera fila de canciones-->
+                <div class="torso">
+                    <h2 class="tituloSongs">Sobre Rosalía</h2>
+                    <!--Esto es una fila de canciones--> 
+                    <div class="sobreArtista">
+                        <!--Esto es una cancion-->
+                        <div class="fotoArtista">
+                            <!--La imagen de la cancion-->
+                            <img src="https://media1.popsugar-assets.com/files/thumbor/cyQscKok7YuJpnfLE7Z68FjPJ18/532x721:3275x3464/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2019/11/20/066/n/1922398/f43c40a65dd5dbcecb3970.50715636_/i/Rosal%C3%ADa.jpg" class="fotoBio" name="BadBunnyFoto", alt = "BadBunnyFoto">
+                            <!--El audio para reproducir dicha cancion-->
+                        </div>
+                        <div class="biografia">
+                            <p>Rosalia Vila Tobella, conocida simplemente como Rosalía,</p>
+                            <p>es una cantante, compositora, productora discográfica</p>
+                            <p>y actriz española. Después de descubrir la música folclórica</p>
+                            <p>española a una edad temprana, Rosalía se graduó de la Facultad</p>
+                            <p>de Música de Cataluña con honores en virtud de su álbum de</p>
+                            <p>portada de colaboración con Raul Refree, Los ángeles (2017)</p>
+                            <p>y el proyecto de fin de carrera El mal querer (2018).</p>
+
+                            <p>"Saoko Papi Saoko" --- Rosalía</p>
+                        </div>
+                    </div>
+                    <!--Esto es la segunda fila de canciones repitiendo la estructura de la primera-->
+                    <!--Titulo-->
+                    <h2 class="tituloSongs">Álbumes</h2> 
+                    <!--Fila de canciones-->
+                    <div class="songs">  
+                        <!--cancion objeto-->                     
+                        <div class="cancion">
+                            <!--imagen de la cancion-->
+                            <img src="https://pbs.twimg.com/media/FcKA7SKWAAIsrGP?format=jpg&name=900x900" class="img" name="MOTOMAMI+" alt = "Rosalia">
+                            <div class="caption">MOTOMAMI+</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2730c179967a265de0fc76382fe" class="img" name="MOTOMAMI" alt = "Rosalia">
+                            <div class="caption">MOTOMAMI</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273f4d64a6a6b7e24b6bd9f009f" class="img" name="El Mal Querer" alt = "Rosalia">
+                            <div class="caption">El Mal Querer</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://m.media-amazon.com/images/I/61ArH1f5x-L._SL1200_.jpg" class="img" name="Los Ángeles" alt = "Rosalia">
+                            <div class="caption">Los Ángeles</div>
+
+                        </div>
+
+                    </div>
+                    <!--Esto es la tercera fila de cancion con la misma estructura que las previas-->
+                    <!--titulo-->
+                    <h2 class="tituloSongs">Sus mejores canciones</h2>
+                    <!--Fila de canciones-->
+                    <div class="songs">
+                        <!--Cancion obj-->
+                        <div class="cancion">
+                            <img src="https://images.genius.com/567b764e878fe32329c4a820687dba9b.1000x1000x1.png" class="img" name="La Noche De Anoche" alt = "Rosalia">
+                            <button class="PPbutton" onclick="playSong('0', 'La Noche De Anoche')">▶</button>
+                            <audio class="audio" src="images/0.mp3"></audio>
+                            <div class="caption">La Noche De Anoche</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://cdn.smehost.net/sonymusices-45pressprod/wp-content/uploads/2019/03/rosalia-j-balvin-el-guincho-con-altura-1553793709-compressed.jpg" class="img" name="Con Altura"  alt = "Rosalia"> 
+                            <button class="PPbutton" onclick="playSong('1', 'Con Altura')">▶</button>
+                            <audio class="audio" src="images/1.mp3"></audio>
+                            <div class="caption">Con Altura</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273694844fd046ab81e5dc9a4cf" class="img" name="Yo x Ti, Tu x Mi"  alt = "Rosalia">
+                            <button class="PPbutton" onclick="playSong('2', 'Yo x Ti, Tu x Mi')">▶</button>
+                            <audio class="audio" src="images/2.mp3"></audio>
+                            <div class="caption">Yo x Ti, Tu x Mi</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273f4d64a6a6b7e24b6bd9f009f" class="img" name="MALAMENTE"  alt = "Rosalia">
+                            <button class="PPbutton" onclick="playSong('3', 'MALAMENTE')">▶</button>
+                            <audio class="audio" src="images/3.mp3"></audio>
+                            <div class="caption">MALAMENTE</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2730c179967a265de0fc76382fe" class="img" name="LA FAMA"  alt = "Rosalia">
+                            <button class="PPbutton" onclick="playSong('4', 'LA FAMA')">▶</button>
+                            <audio class="audio" src="images/0.mp3"></audio>
+                            <div class="caption">LA FAMA</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer">
+                <div id="cancionSonando">
+                    <div id="nowPlaying">Now Playing:</div>
+                        <p id="nameOfSong"></p>
+                </div>
+                <div id="controlesPlay">
+                    <div id="parteArriba">
+                        <button id="footerButton">▶</button>
+                    </div>
+                    <div id="parteAbajo">
+                        <input type="range" id="progresoCancion" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+                <div id="controlesSonido">
+                    <div id="sonidoArriba">
+                        <img src="https://w7.pngwing.com/pngs/363/907/png-transparent-computer-icons-volume-others-text-logo-share-icon-thumbnail.png" id="imagenVolumen">
+                    </div>
+                    <div id="sonidoAbajo">
+                        <input type="range" id="volumenCancion" onchange="cambiarVolumen()" step="0.05" min="0" max="1" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/reproductor_artistas.js"></script>
+
+
+</html>

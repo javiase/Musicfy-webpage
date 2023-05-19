@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Martin, Alvaro y Javi Web</title>
+        <link rel="stylesheet" type="text/css" href="style/style_logged_in.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--LIBRERIA PARA ICONOS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Diseñamos toda la pagina utilizando un grid-->
+        <div class="grid">
+
+            <!--Esta es la columna derecha (entera)-->
+            <div class="right"> 
+                <div class="header">
+                    <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                        <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                        <!--Esto es el titulo-->
+                        <h2 id="titulo">Musicfy</h2>
+                    </div>
+                    <div class="header-right">
+                        <h3 class="btn-buscar"><a href="buscador.html">Buscador</a></h3>
+                        <!--Header de la columna derecha-->
+                        <div class="profile" onclick="desplegable()">
+                            <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                            <ul id="nav">
+                                <li ><a href="cuenta.html">Cuenta</a></li>
+                                <li ><a href="perfil.html">Perfil</a></li>
+                                <li><a href="ver_Listas.html">Mis Listas</a></li>
+                                <li onclick="alertLogOut()"><a id="cerrar-sesion" >Cerrar sesión</a></li>
+                                <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/">Politica de Privacidad</a></li>
+                                <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop">Politica de Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <!--Aqui tenemos el titulo de la primera fila de canciones-->
+                <div class="torso">
+                    <h2 class="tituloSongs">Sobre Bad Bunny</h2>
+                    <!--Esto es una fila de canciones--> 
+                    <div class="sobreArtista">
+                        <!--Esto es una cancion-->
+                        <div class="fotoArtista">
+                            <!--La imagen de la cancion-->
+                            <img src="https://cdns-images.dzcdn.net/images/artist/f21443a563e5d03ddf83ed1e6a12d581/500x500.jpg" class="fotoBio" name="BadBunnyFoto", alt = "BadBunnyFoto">
+                            <!--El audio para reproducir dicha cancion-->
+                        </div>
+                        <div class="biografia">
+                            <p>Benito Antonio Martínez Ocasio, conocido artísticamente como Bad Bunny,</p>
+                            <p>es un rapero, cantante, compositor y actor puertorriqueño.</p>
+                            <p>Su estilo de música es generalmente definido como trap latino y reguetón,</p>
+                            <p>pero también ha interpretado otros géneros como kizomba y soul.</p>
+
+                            <p>"Si hay sol, hay playa..." --- Bad Bunny</p>
+                        </div>
+                    </div>
+                    <!--Esto es la segunda fila de canciones repitiendo la estructura de la primera-->
+                    <!--Titulo-->
+                    <h2 class="tituloSongs">Álbumes</h2> 
+                    <!--Fila de canciones-->
+                    <div class="songs">  
+                        <!--cancion objeto-->                     
+                        <div class="cancion">
+                            <!--imagen de la cancion-->
+                            <img src="https://i.scdn.co/image/ab67706f0000000395c94a38840f54b062b8739d" class="img" name="Un verano sin ti" alt = "Bad Bunny">
+                            <div class="caption">Un verano sin ti</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273548f7ec52da7313de0c5e4a0" class="img" name="YHLQMDLG" alt = "Bad Bunny">
+                            <div class="caption">YHLQMDLG</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://m.media-amazon.com/images/I/81W36WV9bFL._SY450_.jpg" class="img" name="X 100pre" alt = "Bad Bunny">
+                            <div class="caption">X 100pre</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.pinimg.com/550x/40/66/51/406651bcc3fd15ad51c83cff790b7528.jpg" class="img" name="El Conejo Malo" alt = "Bad Bunny">
+                            <audio controls>
+                                <source src="images/neverita.mp3" type="audio/mp3">
+                            </audio>
+                            <div class="caption">El Conejo Malo</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://images.genius.com/52e78e22c4fc87e646e28f78513e8d0c.1000x1000x1.jpg" class="img" name="Up Next" alt = "Bad Bunny">
+                            <audio controls>
+                                <source src="images/neverita.mp3" type="audio/mp3">
+                            </audio>
+                            <div class="caption">Up Next</div>
+
+                        </div>
+                    </div>
+                    <!--Esto es la tercera fila de cancion con la misma estructura que las previas-->
+                    <!--titulo-->
+                    <h2 class="tituloSongs">Sus mejores canciones</h2>
+                    <!--Fila de canciones-->
+                    <div class="songs">
+                        <!--Cancion obj-->
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b2734d382194384bc6e08eb090f6" class="img" name="MIA" alt = "Bad Bunny">
+                            <button class="PPbutton" onclick="playSong('0', 'MIA')">▶</button>
+                            <audio class="audio" src="images/0.mp3"></audio>
+                            <div class="caption">MIA</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273005ee342f4eef2cc6e8436ab" class="img" name="Dakiti"  alt = "Bad Bunny"> 
+                            <button class="PPbutton" onclick="playSong('1', 'Dakiti')">▶</button>
+                            <audio class="audio" src="images/1.mp3"></audio>
+                            <div class="caption">Dakiti</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273f68d3148a46b457e05f2acde" class="img" name="Amorfoda"  alt = "Bad Bunny">
+                            <button class="PPbutton" onclick="playSong('2', 'Amorfoda')">▶</button>
+                            <audio class="audio" src="images/2.mp3"></audio>
+                            <div class="caption">Amorfoda</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://i1.sndcdn.com/artworks-000197467505-sluqi7-t500x500.jpg" class="img" name="Soy peor"  alt = "Bad Bunny">
+                            <button class="PPbutton" onclick="playSong('3', 'Soy peor')">▶</button>
+                            <audio class="audio" src="images/3.mp3"></audio>
+                            <div class="caption">Soy peor</div>
+
+                        </div>
+                        <div class="cancion">
+                            <img src="https://www.hoyesarte.com/constelac10n/files/2020/01/003.jpg" class="img" name="Callaita"  alt = "Bad Bunny" >
+                            <button class="PPbutton" onclick="playSong('4', 'Callaita')">▶</button>
+                            <audio class="audio" src="images/0.mp3"></audio>
+                            <div class="caption">Callaita</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer">
+                <div id="cancionSonando">
+                    <div id="nowPlaying">Now Playing:</div>
+                        <p id="nameOfSong"></p>
+                </div>
+                <div id="controlesPlay">
+                    <div id="parteArriba">
+                        <button id="footerButton">▶</button>
+                    </div>
+                    <div id="parteAbajo">
+                        <input type="range" id="progresoCancion" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+                <div id="controlesSonido">
+                    <div id="sonidoArriba">
+                        <img src="https://w7.pngwing.com/pngs/363/907/png-transparent-computer-icons-volume-others-text-logo-share-icon-thumbnail.png" id="imagenVolumen">
+                    </div>
+                    <div id="sonidoAbajo">
+                        <input type="range" id="volumenCancion" onchange="cambiarVolumen()" step="0.05" min="0" max="1" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/reproductor_artistas.js"></script>
+
+
+</html>

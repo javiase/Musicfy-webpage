@@ -1,0 +1,469 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{margin:0px;}
+/*Eliminando algunas decoraciones de texto de los textos que son links*/
+.migas{
+    position: absolute;
+    top: 13vh;
+    left: 4px;
+    color: white; 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 8px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    text-transform: none;
+    background-color: rgb(73, 73, 73); 
+    display: inline-block;
+    color:black;
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+    color: white;
+} 
+.grid{
+    display: grid;
+    grid-template-rows: "100vh";
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    overflow: none;
+}
+.grid-no-footer{
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    display: grid;
+    grid-template-rows: "100vh";
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    overflow: none;
+}
+::-webkit-scrollbar{
+    width:13px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+
+/*Profile*/
+.profile{
+    right:100px;
+    color:white;
+}
+/*imagen de perfil*/
+#pfp{
+    height: 45px;
+    width:45px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+#pfpp{
+    height: 45px;
+    width:45px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#nav{
+    list-style: none;
+    display: none;
+    position: absolute;
+    display:none;
+    z-index: 2;
+    left: 0px;
+    top:57px
+}
+#nav li a{
+    background-color: rgb(48, 48, 48);
+    color:#fff;
+    text-decoration: none;
+    padding:10px 15px;
+    display:block;
+
+}
+#nav li :hover{
+    background-color:rgb(133, 133, 133);
+    text-decoration: none;
+    box-shadow: 7px 7px 9px white;
+}
+
+/*header superior*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 32, 32);
+    height: 11vh
+}
+.sign{
+    margin-right: 20px;
+}
+/*El header con el titulo y el logo*/
+.header-left{
+    text-align: center;
+    display:flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*Logo*/
+.logo{
+    padding:10px;
+    width:50px;
+    height:50px;
+}
+/*Titulo*/
+#titulo{
+    color: white;
+    background-color: rgb(32, 32, 32);
+} 
+
+/*apartados es la seccion donde se encuentran los minilogos y los links (texto) de la columna de la izquierda*/
+.apartados{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opciones{
+    padding:0px;
+    justify-content: center;
+    list-style: none;
+}
+.opcion{
+    text-align: center;
+    color:#fff;
+    display:block;
+    padding:20px 15px;
+    font-size: larger;
+    display:flex;
+    align-items: center;
+    margin:0px;
+    justify-content: center;
+}
+.opcion:hover{
+    background-color:rgb(133, 133, 133);
+}
+
+/*politicas de privacidad y cookies*/
+.politicas{
+    padding:20px;
+    position: fixed;
+    bottom: 40px;
+    font-size: medium;
+}
+
+/*columna drcha*/
+.right{
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+}
+/*botones Sign In y Sign Up*/
+.myButton-sign{ 
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 10px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none;
+    background-color: rgb(73, 73, 73); 
+    display: inline-block;
+    margin:none;
+}
+/*Efectos de botones*/
+.myButton-sign:hover {
+    background: #1C6EA4; 
+}
+.myButton-sign:active {
+    background: #144E75; 
+}
+/*Eñ header de la columna derecha que contiene los botones Sign In y Sign Up*/
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(32, 32, 32);
+    
+}
+
+/*El cuerpo de la columna derecha que contiene las secciones de canciones*/
+.torso{
+    display: flex;
+    overflow-y:scroll;
+    white-space:nowrap;
+    flex-direction: column;
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    height: 81vh;
+    width:100%;
+}
+/*El titulo de las canciones*/
+.tituloSongs{
+    color: white;
+    text-align:center;
+}
+/*Imagenes de las canciones*/
+.img{
+    width: 180px;
+    height: 180px;
+}
+/*Es la fila de canciones*/
+/*Le hemos puesto un overflow horizontal como scroll para que las canciones que no quepen se vayan abajo o desaparezcan*/
+.songs-countdown{ 
+    text-align:center;
+    margin:50px auto;
+    overflow-x: scroll;
+    height: 250px;
+    white-space:nowrap;
+    min-height: 250px;
+}
+.songs { 
+    text-align:center;
+    margin:50px auto;
+    overflow-x: scroll;
+    height:320px;
+    min-height: 320px;
+    white-space:nowrap;
+    width: 100%;
+}
+/*Cada cancion*/
+.cancion{
+    position: relative;
+    margin:0px 20px;
+    padding:20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+/*Descripcion de canciones*/
+.caption{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*sirve para que aparezca el audio una vez pasas el raton por encima de la imagen de la cancion*/
+img:hover + audio{ 
+    display:inline;
+}
+/*sirve para que no desaparezca el reproductor al poner el raton encima de el (ya que al ponerla encima del reproductor dejariamos de estar con el raton en la imagen y desapareceria si no estuviera este codigo*/
+audio:hover{    
+    display: inline;
+}
+/*separamos estas lineas de codigo del "img:hover + audio" porque asi no se enoscurece el reproductor*/
+img:hover{ 
+    transform: scale(1.1);
+    filter: blur(0.5px);
+    filter: brightness(.4);
+}
+/*El audio de la musica (reproductor)*/
+audio{
+    width: 100px;
+    position:absolute;
+    bottom: 35%;
+    left: 28%;
+    width: 100px;
+    display: none;
+}
+.footer-mensaje{
+    background-color: rgb(88, 152, 79);
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    height: 8vh;
+}
+
+/* FORMULARIO */
+.torso-form{
+    height: 81vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+#form-sign-up{
+    width: 400px;
+    background: rgb(48, 48, 48);
+    padding:40px;
+    margin:auto;
+    margin-top:2%;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 7px 9px white;
+
+}
+
+.form-sign-up h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-field{
+    width:100%;
+    background:rgb(48, 48, 48);
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(150, 149, 149);
+    font-family: Calibri;
+    font-size:18px;
+}
+#img-terminos{
+    display: flex;
+    flex-direction:column;
+}
+.botones{
+    display:flex;
+    justify-content: space-around;
+}
+#fecha_nacimiento{
+    color: grey;
+}
+.btn_enviar{
+    color: white;
+    width:30%;
+    margin-right:10px;
+}
+.btn_borrar_datos{
+    color: white;
+    width:40%;
+    margin-left:10px;
+}
+#img-g-fb{
+    display: flex;
+    justify-content: space-evenly;
+}
+#img-g{
+    margin-top: 2%;
+    margin-right: 2%;
+    width:20px;
+}
+#img-fb{
+    margin-top: 2%;
+    width: 20px;
+}
+
+/* LOG IN */
+#form-log-in{
+    width: 400px;
+    background: rgb(48, 48, 48);
+    padding:40px;
+    margin:auto;
+    margin-top:8%;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 7px 9px white;
+}
+#form-log-in h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.form-field{
+    width:100%;
+    background:rgb(48, 48, 48);
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(150, 149, 149);
+    font-family: Calibri;
+    font-size:18px;
+}
+#img-g-fb{
+    display: flex;
+    justify-content: space-evenly;
+}
+#img-g{
+    margin-top: 2%;
+    margin-right: 2%;
+    width:20px;
+}
+#img-fb{
+    margin-top: 2%;
+    width: 20px;
+}
+#enviar{
+    color: white;
+    width:30%;
+    margin-right:10px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  MEDIA QUERIES  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*Aqui abajo estan las mediaqueries con diversos breakpoints para moviles y tablets*/
+/*Lo utilizamos solamente para las caracteristicas que nos interesan modificar para dicho dispositivos*/
+
+/*Esta es para pantallas de hasta 768px de anchura (tablets)*/
+@media screen and (max-width: 768px) { 
+    .opcion {  /*ocultamos el texto con los links para que quede mas limpio*/
+        display:none;
+    }
+    #titulo{
+        display:none;
+    }
+    .torso{
+        height: 79vh;
+    }
+    .img{  /*hacemos mas pequeñas las canciones*/
+        width: 130px;
+        height: 130px;
+    }
+    .songs {
+        text-align:center;
+        margin:40px auto;
+        overflow-x: scroll;
+        height: 240px;
+        white-space:nowrap;
+    }
+    .header{
+        height: 11vh;
+    }
+    .logo{
+        margin:auto;
+        height:45px;
+        width: 45px;
+    }
+    .img{
+        width: 125px;
+        height: 125px;
+    }
+    #pfp{
+        height: 43px;
+        width: 43px;
+    }
+    .logo-div{
+        align-items: center;
+        text-align: center;
+    }
+    .desplegable-img{
+        margin:5px;
+    }
+    .footer-mensaje{
+        height: 10vh;
+    }
+    .torso-form{
+        overflow-y: scroll;
+    }
+    .migas{
+        display: none;
+    }
+}
+
+/*Esto es para pantallas de hasta 600 px (moviles)*/
+@media screen and (max-width: 600px) {
+
+}

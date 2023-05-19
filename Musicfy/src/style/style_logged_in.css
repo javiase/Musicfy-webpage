@@ -1,0 +1,1055 @@
+body{margin:0px;}
+p,h1,h2,h3,h4,h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.migas{
+    position: absolute;
+    top: 11vh;
+    left: 10px;
+    color: white; 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 8px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    text-transform: none;
+    background-color: rgb(73, 73, 73); 
+    display: inline-block;
+    color:black;
+    z-index: 1;
+}
+.idiomas{
+    position: absolute;
+    top: 11vh;
+    right: 20px;
+    color: white; 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 8px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    text-transform: none;
+    background-color: rgb(73, 73, 73); 
+    display: inline-block;
+    color:black;
+    z-index: 1;
+}
+.grid{
+    display: grid;
+    grid-template-rows: "100vh";
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    overflow: none;
+}
+.grid-no-footer{
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    display: grid;
+    grid-template-rows: "100vh";
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    overflow: none;
+}
+/*Eliminando algunas decoraciones de texto de los textos que son links*/
+a {
+    text-decoration: none;
+    color: white;
+} 
+
+
+/*header*/
+.header{
+    height:11vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 32, 32);
+}
+/*El header con el titulo y el logo*/
+.header-left{
+    text-align: center;
+    display:flex;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+#pfp:hover{
+    box-shadow: 7px 7px 9px white;
+}
+
+
+/*Logo*/
+.logo{
+    padding:10px;
+    width:50px;
+    height:50px;
+}
+/*Titulo*/
+#titulo{
+    color: white;
+    background-color: rgb(32, 32, 32);
+} 
+/*apartados es la seccion donde se encuentran los minilogos y los links (texto) de la columna de la izquierda*/
+.apartados{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opciones{
+    padding:0px;
+    justify-content: center;
+    list-style: none;
+}
+.opcion{
+    text-align: center;
+    color:#fff;
+    display:block;
+    padding:20px 15px;
+    font-size: larger;
+}
+.opcion:hover{
+    background-color:rgb(133, 133, 133);
+}
+/*politicas de privacidad y cookies*/
+.politicas{
+    padding:20px;
+    position: fixed;
+    bottom: 60px;
+    font-size: medium;
+}
+
+
+/*botones Sign In y Sign Up*/
+.btn-buscar{ 
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 10px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none;
+    background-color: rgb(73, 73, 73); 
+    display: inline-block;
+    color:black;
+}
+.btn-buscar a{
+    color:white;
+    font-size:larger;
+}
+.btn-buscar:hover{
+    background-color: #1C6EA4;
+}
+
+
+.btn-volver{ 
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 10px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none;
+    background-color: rgb(73, 73, 73); 
+    display: inline-block;
+    margin:15px;
+}
+/*Efectos de botones*/
+.btn-volver:hover {
+    background: #1C6EA4;
+ 
+}
+
+.btn-buscador{
+    width:50%;
+    height: 30px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 20px;
+    padding: 0px 15px;
+    margin-left: 7%;
+}
+/*Profile*/
+.profile{
+    right:100px;
+    color:white;
+}
+/*imagen de perfil*/
+#pfp{
+    height: 50px;
+    width:50px;
+    margin: 15px;
+    border-radius: 50%;
+    border:2px solid white;
+}
+#pfp:hover{
+    box-shadow: 7px 7px 9px white;
+}
+#nav{
+    list-style: none;
+    display: none;
+    position: absolute;
+    display:none;
+    z-index: 2;
+    right: 20px;
+    top:55px
+}
+#nav li a{
+    background-color: rgb(48, 48, 48);
+    color:#fff;
+    text-decoration: none;
+    padding:10px 15px;
+    display:block;
+
+}
+
+#nav li :hover{
+    background-color:rgb(133, 133, 133);
+    text-decoration: none;
+    box-shadow: 7px 7px 9px white;
+}
+/*El cuerpo*/
+.torso{
+    display: flex;
+    overflow-y:scroll;
+    white-space:nowrap;
+    flex-direction: column;
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    height: 79vh;
+    width:100%;
+    margin:0px;
+    padding: 0px;
+}
+.torso-mensaje{
+    display: flex;
+    overflow-y:scroll;
+    white-space:nowrap;
+    flex-direction: column;
+    background: linear-gradient(rgb(150, 149, 149), rgb(82, 82, 82));
+    height: 79vh;
+    width:100%;
+    margin:0px;
+    padding: 0px;
+}
+::-webkit-scrollbar{
+    width:13px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+}
+/*El titulo de las canciones*/
+.tituloSongs{
+    color: white;
+    text-align:center;
+}
+/*Imagenes de las canciones*/
+.img{
+    width: 180px;
+    height: 180px;
+}
+/*Es la fila de canciones*/
+/*Le hemos puesto un overflow horizontal como scroll para que las canciones que no quepen se vayan abajo o desaparezcan*/
+.songs { 
+    text-align:center;
+    margin:50px auto;
+    overflow-x: scroll;
+    height:320px;
+    min-height: 320px;
+    white-space:nowrap;
+    width: 100%;
+}
+
+#autores{
+    text-align:center;
+    margin:50px auto;
+    width: 100%;
+    overflow-x: scroll;
+    height:320px;
+    min-height: 320px;
+    white-space:nowrap;  
+ }
+/*Cada cancion*/
+.cancion{
+    display: none;
+    position: relative;
+    margin:0px 20px;
+    padding:20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+/*Descripcion de canciones*/
+.caption{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*sirve para que aparezca el audio una vez pasas el raton por encima de la imagen de la cancion*/
+img:hover + audio{ 
+    display:inline;
+}
+/*sirve para que no desaparezca el reproductor al poner el raton encima de el (ya que al ponerla encima del reproductor dejariamos de estar con el raton en la imagen y desapareceria si no estuviera este codigo*/
+audio:hover{    
+    display: inline;
+}
+/*separamos estas lineas de codigo del "img:hover + audio" porque asi no se enoscurece el reproductor*/
+img:hover{ 
+    transform: scale(1.1);
+    filter: blur(0.5px);
+    filter: brightness(.4);
+}
+/*El audio de la musica (reproductor)*/
+audio{
+    width: 100px;
+    position:absolute;
+    bottom: 35%;
+    left: 28%;
+    width: 100px;
+    display: none;
+}
+.PPbutton{ /*BOTONES DE PLAY Y PAUSE*/
+    width: 50px;
+    height: 50px;
+    border-radius: 300%;
+    position:absolute;
+    bottom: 40%;
+    left: 39%;
+}
+.PPbuttonBUSC{
+    width: 50px;
+    height: 50px;
+    border-radius: 300%;
+    position:absolute;
+    bottom: 38%;
+    left: 36%;
+}
+.MG{
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    top: 24.5vh;
+    left: 10vh;
+}
+.heart{
+    font-size: 4em;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 22vh;
+    left: 9.5vh;
+    pointer-events: none;
+}
+.FollowArt{
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    top: 25vh;
+    left: 10vh;
+}
+.FollowUsu{
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    top: 25vh;
+    left: 10vh;
+}
+.starA{
+    font-size: 4em;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 21vh;
+    left: 8.5vh;
+    pointer-events: none;
+}
+.starU{
+    font-size: 4em;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 21vh;
+    left: 8.5vh;
+    pointer-events: none;
+}
+input:checked ~ .heart {
+    color: green;
+}
+input:checked ~ .starA {
+    color: green;
+}
+input:checked ~ .starU {
+    color: green;
+}
+/*
+label {
+    font-size: 4em;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 22vh;
+    left: 9.5vh;
+    pointer-events: none;
+}
+*/
+/*
+.cancion input {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+*/
+/*El footer de la pagina*/
+.footer{
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    display: flex;
+    height: 10vh;
+}
+.footer-mensaje{
+    background-color: rgb(88, 152, 79);
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
+}
+.footer-mensaje h3{
+    margin:auto
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 300%;
+    position:absolute;
+    bottom: 40%;
+    left: 39%;
+    display: none;
+}
+img:hover + .btn{ 
+    display:inline;
+}
+/*sirve para que no desaparezca el reproductor al poner el raton encima de el (ya que al ponerla encima del reproductor dejariamos de estar con el raton en la imagen y desapareceria si no estuviera este codigo*/
+.btn:hover{    
+    display: inline;
+}
+/*El footer de la pagina*/
+#nowPlaying{
+    color: white;
+}
+#nameOfSong{
+    color: greenyellow;
+}
+#cancionSonando, #controlesPlay, #controlesSonido {
+    display: flex;
+    flex-direction: column;
+    /**display: inline;*/
+    /*zoom: 1;*/
+    vertical-align: top;
+    /*font-size: 12px;*/
+    justify-content: space-evenly;
+}
+#cancionSonando{
+    width: 33%;
+    height: 100%;
+    /*background:blue;*/
+}
+#controlesPlay{
+    width: 33%;
+    height: 100%;
+    /*background: green;*/
+}
+#controlesSonido{
+    width: 33%;
+    height: 100%;
+    /*background: yellow;*/
+}
+#usuarios{
+    min-height: 320px;
+    overflow-x: scroll;
+    text-align: center;
+    white-space: nowrap;
+ }
+#progresoCancion{
+    left: 23%;
+    bottom: 20px;
+    width: 80%;
+    margin:0px;
+}
+#volumenCancion{
+    left: 23%;
+    bottom: 20px;
+    width: 40%;
+    margin:0px;
+}
+/*#sonidoArriba{
+    height: 30px;
+}*/
+/*#sonidoAbajo{
+    height: 70%;
+}*/
+/*#PPbutton{
+    margin-top: 0px;
+}*/
+input[type="image"]{
+    float:left;
+    height:20px;
+    margin-left:2px;
+    margin-right:5px;
+    margin-top:2px;
+}
+#imagenVolumen{
+    width:20px;
+}
+/*----------------------- LAS BARRAS DE PROGRESO Y VOLUMEN ---------------------*/
+input[type=range] {
+    height: 34px;
+    /*-webkit-appearance: none;*/
+    margin: 10px 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #002200;
+    background: #205928;
+    border-radius: 1px;
+    border: 1px solid #18D501;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #205928;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #002200;
+    background: #205928;
+    border-radius: 1px;
+    border: 1px solid #18D501;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #205928;
+    border: 1px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #002200;
+}
+input[type=range]::-ms-fill-upper {
+    background: #205928;
+    border: 1px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #002200;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #205928;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #205928;
+}
+
+/* CUENTA */
+.cuenta-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.cuenta-elem{
+    display: flex;
+}
+.cuenta-elem p{
+    font-size: large;
+}
+
+.cuenta-caja{
+    width: 10%;
+    min-width: 450px;
+    background: rgb(48, 48, 48);
+    padding:35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 7px 9px white;
+}
+.cuenta-caja h4{
+    font-size: 22px;
+    margin: 0px;
+
+}
+.cuenta-field{
+    width:70%;
+    background:rgb(48, 48, 48);
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(150, 149, 149);
+    font-family: Calibri;
+    font-size:18px;
+}
+.cuenta-button {
+    background-color: #313131;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    padding: 4px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* CREAR LISTA */
+
+.crearLista-caja{
+    width: 680px;
+    min-width: 680px;
+    background: rgb(48, 48, 48);
+    padding:35px;
+    margin:auto;
+    margin-top:3%;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 7px 9px white;
+}
+.crearLista-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+} 
+.btn-verLista {
+    background-color: #313131;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.crearLista-caja h4{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.crearLista-searchbox-main{
+    align-items: center;
+}
+#guardarNuevaLista{
+    background-color: #313131;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    padding: 3px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.crearLista-searchbox{
+    width:65%;
+    min-width: 220px;
+    height:15px;
+    background:rgb(48, 48, 48);
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(181, 181, 181);
+    font-family: Calibri;
+    font-size:18px;
+    color:white;
+}
+.crearLista-searchbox::placeholder{
+    color:rgb(181, 181, 181);
+}
+
+.crearLista-button {
+    background-color: #313131;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    padding: 4px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.crearLista-form{
+    display:flex;
+}
+.crearLista-left{
+    min-width: 380px;
+    height:100%;
+    
+}
+.crearLista-left-body{
+    height:100%;
+    overflow:scroll;
+}
+
+/* VER LISTAS */
+
+.btn-crearLista {
+    background-color: #313131;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.verLista-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}    
+.cuenta-elem{
+    display: flex;
+}
+.cuenta-elem p{
+    font-size: large;
+}
+
+.verLista-caja{
+    width: 400px;
+    background: rgb(48, 48, 48);
+    padding:35px;
+    margin:auto;
+    margin-top:3%;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 7px 9px white;
+    height:450px;
+}
+.verLista-caja h4{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.verLista-searchbox{
+    width:70%;
+    background:rgb(48, 48, 48);
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(150, 149, 149);
+    font-family: Calibri;
+    font-size:18px;
+    color:white;
+}
+.verLista-searchbox::placeholder{
+    color: rgb(149, 149, 149);
+}
+.verLista-titulo{
+    text-align: center;
+    font-size: 25px;
+    padding:5px 10px;
+    margin:0px;
+}
+
+/* MOSTRAR LISTA */
+
+.mostrarLista-caja{
+    width: 400px;
+    height:75%;
+    background: rgb(48, 48, 48);
+    padding:35px;
+    margin:auto;
+    margin-top:3%;
+    border-radius: 4px;
+    font-family: Calibri;
+    color: white;
+    box-shadow: 7px 7px 9px white;
+}
+.mostrarLista-field{
+    width:70%;
+    background:rgb(48, 48, 48);
+    padding:5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(150, 149, 149);
+    font-family: Calibri;
+    font-size:18px;
+    color:white;
+}
+
+/* BUSCADOR */
+.header-right-buscador{
+    display: flex;
+    align-items: center;
+}
+.tituloSongs-buscador{
+    color: white;
+    text-align:center;
+}
+.torso-buscador{
+    overflow-y: scroll;
+    text-align:center;
+    margin:0px;
+    height: 79vh;
+}
+
+#searchSong{
+    width:50%;
+    height: 30px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 20px;
+    padding: 0px 15px;
+    margin-left: 7%;
+}
+
+#searchSong::placeholder{
+    color:gray;
+    font-size: medium;
+}
+
+/* PERFIL */
+
+.torso-perfil{
+    display: flex;
+    overflow: scroll;
+    justify-content: center;
+    overflow-x:scroll;
+    width: 100%;
+}
+.img-perfil{
+    width:150px;
+    height: 150px;
+    border:4px solid black;
+    box-shadow: 4px 4px 6px white;
+    background-color: white;
+
+}
+.perfil-elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:50px;
+    color:white;
+}
+
+
+/* Carpetas */
+
+.artistas {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.artista{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.img-artista{
+    width:200px;
+    height:200px;
+    border:4px solid black;
+    box-shadow: white 4px 4px 7px;
+}
+
+.artistImg:hover{
+    transform: scale(1.1);
+    filter: blur(0.5px);
+    filter: brightness(.4);
+}
+.sobreArtista{
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fotoBio{
+    width: 200px;
+    border-radius: 45%;
+}
+.biografia{
+    text-align: center;
+    font-size: 17px;
+}
+p{
+    display: block;
+    text-align: center;
+}
+
+/* CANCIONES MAS ESCUCHADOS*/
+.tituloSongsME{
+    color: white;
+    text-align:center;
+    height: 20%;
+    padding: auto;
+}
+.resultadosME{
+    display: flex;
+    flex-direction: column;
+}
+.songs-cancionesME{
+    text-align:center;
+    margin: auto;
+    overflow-x: scroll;
+    height:80%;
+    min-height: 320px;
+    white-space:nowrap;
+    width: 100%;
+}
+
+
+/* GENTE QUE SIGO */
+
+.img-friend{
+    width:200px;
+    height:200px;
+    border:3px solid black;
+    box-shadow: white 5px 5px 7px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  MEDIA QUERIES  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*Aqui abajo estan las mediaqueries con diversos breakpoints para moviles y tablets*/
+/*Lo utilizamos solamente para las caracteristicas que nos interesan modificar para dicho dispositivos*/
+
+/*Esta es para pantallas de hasta 768px de anchura (tablets)*/
+@media screen and (max-width: 768px) { 
+    .img{
+        width: 125px;
+        height: 125px;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+    #titulo{
+        color: white;
+        background-color: rgb(32, 32, 32);
+        font-size: large;
+    } 
+    .footer{
+        height:14vh;
+        display: flex;
+    }
+    .torso{
+        height:75vh;
+    }
+
+    #controlesSonido{
+        display: none;
+    }
+    #nowPlaying{
+        display: none;
+    }
+    #controlesPlay{
+        justify-content: center;
+    }
+    .footer-mensaje{
+        height: 10vh;
+    }
+    .torso-perfil{
+        overflow-x: scroll;
+        height:79vh;
+        white-space: nowrap;
+    }
+    .img-perfil{
+        height:70px;
+        height:70px;
+    }
+    #pfp{
+        height: 43px;
+        width: 43px;
+    }
+    .btn-buscar{
+        font-size: small;
+    }
+    .resutadosBusquedas{
+        margin: 0px;
+        padding: 0px;
+    }
+    .idiomas{
+        display: none;
+    }
+    .migas{
+        display: none;
+    }
+
+}
+
+
+/*Esto es para pantallas de hasta 600 px (moviles)*/
+@media screen and (max-width: 600px) {
+    .img{
+        width: 100px;
+        height: 100px;
+    }
+    .btn-volver{
+        display: none;
+    }
+}

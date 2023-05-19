@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title id = "1"></title>
+        <link rel="stylesheet" id="claroscuro" type="text/css" href="style/style_logged_in.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--LIBRERIA PARA ICONOS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://css.gg/menu.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="grid">
+            <div class="header">
+                <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                    <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                    <!--Esto es el titulo-->
+                    <h2 id="titulo">Musicfy</h2>
+                </div>
+                <div class="header-right">
+                    <h3 class="btn-buscar"><a href="buscador.html" id = "2"></a></h3>
+                    <!--Header de la columna derecha-->
+                    <div class="profile" onclick="desplegable()">
+                        <img id="pfp" src="" alt="Profile picture">
+                        <ul id="nav">
+                            <li ><a href="cuenta.html" id = "3"></a></li>
+                            <li ><a href="perfil.html" id = "4"></a></li>
+                            <li><a id="boton_claroscuro" onclick="cambiar_color()"></a></li>
+                            <li onclick="alertLogOut()"><a id="cerrar-sesion" ></a></li>
+                            <li><a href="ver_Listas.html" id = "5"></a></li>
+                            <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/" id = "7"></a></li>
+                            <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop" id = "8"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <!--Aqui tenemos el titulo de la primera fila de canciones-->
+            <div class="torso">
+                <div class="idiomas">
+                    <a href="" id = "11" onclick = "artistasCambioIdioma('Español')"></a></li>
+                    <a href="" id = "12" onclick = "artistasCambioIdioma('Ingles')"></a></li>
+                </div>
+                <h2 class="tituloSongs" id = "13"></h2>
+                
+                <!--Esto es una fila de canciones--> 
+                <div class="songs">
+                    <!--Esto es una cancion-->
+                    <div class="cancion">
+                        <!--La imagen de la cancion-->
+                        <img src="https://kubomusical.com/wp-content/uploads/2020/03/b28aff60b7bb76c1c225499b4a3e37b6.999x999x1.jpg" class="img" name="Bichiyal", alt = "Bad Bunny">
+                        <p class="countdown"></p>
+                        <div class="caption">
+                            <p class = "caption">Bichiyal</p>
+                        </div>
+                    </div>
+                    <div class="cancion">
+                        <img src="https://images.genius.com/d65c7504dac187ee925a551c914c611b.1000x1000x1.png" class="img" name="Ni**as In Paris" alt = "Jay-Z">
+                        <p class="countdown"></p>
+                        <div class="caption">Ni**as In Paris</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2730c179967a265de0fc76382fe" class="img" name="Motomami" alt = "Rosalia">
+                        <p class="countdown"></p>
+                        <div class="caption">Motomami</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/74/37/3d/74373d24-e999-ea75-e101-b9b21b3887c3/196925240499.jpg/1200x1200bf-60.jpg" class="img" name="Bzrp Music Sessions,Vol.52" alt = "Quevedo">
+                        <p class="countdown"></p>
+                        <div class="caption">Bzrp Music Sessions,Vol.52</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a408c78e231f716383a58eb3" class="img" name="T&uacute; Me Dejaste De Querer" alt = "Ctangana">
+                        <p class="countdown"></p>
+                        <div class="caption">T&uacute; Me Dejaste De Querer</div>
+
+                    </div>
+                </div>
+                <!--Titulo-->
+                <h2 class="tituloSongs" id = "14"></h2> 
+                <!--Fila de canciones-->
+                <div class="songs">  
+                    <!--cancion objeto-->                     
+                    <div class="cancion">
+                        <!--imagen de la cancion-->
+                        <img src="https://i.scdn.co/image/ab67616d0000b2733d54a30e59638f60f56dd4e6" class="img" name="The Perfect Girl" alt = "Mareux">
+                        <!--audio-->
+                        <button class="PPbutton" onclick="playSong('0', 'The Perfect Girl')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/0.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">The Perfect Girl</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://m.media-amazon.com/images/I/71vLF2+pOhL._SL1048_.jpg" class="img" name="Sorry For Party Rocking" alt = "LMFAO"> 
+                        <button class="PPbutton" onclick="playSong('1', 'Sorry For Party Rocking')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/1.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">Sorry For Party Rocking</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://m.media-amazon.com/images/I/81zHbg0fwkL._SL1500_.jpg" class="img" name="Malabares" alt = "Estopa">
+                        <button class="PPbutton" onclick="playSong('2', 'Malabares')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/2.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">Malabares</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://i1.sndcdn.com/artworks-3dnBuO3eozsX0LzA-j7Feyw-t500x500.jpg" class="img" name="The Rebel Path" alt = "P.T. Adamczyk">
+                        <button class="PPbutton" onclick="playSong('3', 'The Rebel Path')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/3.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">The Rebel Path</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2734aef420e62863ebf622c27f5" class="img" name="Callaita" alt = "Bad Bunny">
+                        <button class="PPbutton" onclick="playSong('4', 'Callaita')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/0.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">Callaita</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://m.media-amazon.com/images/I/818x3lyFHDL._SS500_.jpg" class="img" name="BFG Division" alt = "Mick Gordon">
+                        <button class="PPbutton" onclick="playSong('5', 'BFG Division')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/1.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">BFG Division</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://m.media-amazon.com/images/I/51IBTjOKx4L._SS500_.jpg" class="img" name="I'm still standing"  alt = "Elton John"> 
+                        <button class="PPbutton" onclick="playSong('6', 'Im still standing')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/2.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">I'm still standing</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://static.wikia.nocookie.net/callofduty/images/7/76/CoD_BO_Zombies_Soundtrack_Front.png/revision/latest/scale-to-width-down/1200?cb=20180607103953" class="img" name="Damned"  alt = "treyarch">
+                        <button class="PPbutton" onclick="playSong('7', 'Damned')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/3.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">Damned</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://i.discogs.com/VDEhoyYxeNCC2km3XztLeI-hCVauAS2He9g9zhYyndw/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTcy/NDgtMTIyODE4OTE3/MC5qcGVn.jpeg" class="img" name="When I Grow Up"  alt = "NF">
+                        <button class="PPbutton" onclick="playSong('8', 'When I Grow Up')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/0.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">When I Grow Up</div>
+
+                    </div>
+                    <div class="cancion">
+                        <img src="https://i.pinimg.com/originals/dc/06/aa/dc06aa5b004158c0bf43363050b72ddd.jpg" class="img" name="The Chain"  alt = "Fleetwood Mac" >
+                        <button class="PPbutton" onclick="playSong('9', 'The Chain')">▶</button>
+                        <audio class = "audio">
+                            <source src="images/1.mp3" type="audio/mp3">
+                        </audio>
+                        <div class="caption">The Chain</div>
+
+                    </div>
+                </div>
+                <!--Esto es la tercera fila con los autores-->
+                <h2 class="tituloSongs" id = "15"></h2>
+                <!--Fila de autores-->
+                <div id = "autores">
+                    
+                </div>
+                <!--Esto es la cuarta fila con los usuarios-->
+                <h2 class="tituloSongs" id = "16"></h2>
+                <!--Fila de autores-->
+                <div id = "usuarios">
+                    
+                </div>
+            </div>
+        
+            <div class = "footer">
+                <div id="cancionSonando">
+                    <div id="nowPlaying">Now Playing:</div>
+                        <p id="nameOfSong"></p>
+                </div>
+                <div id="controlesPlay">
+                    <div id="parteArriba">
+                        <button id="footerButton">▶</button>
+                    </div>
+                    <div id="parteAbajo">
+                        <input type="range" id="progresoCancion" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+                <div id="controlesSonido">
+                    <div id="sonidoArriba">
+                        <img src="https://w7.pngwing.com/pngs/363/907/png-transparent-computer-icons-volume-others-text-logo-share-icon-thumbnail.png" id="imagenVolumen">
+                    </div>
+                    <div id="sonidoAbajo">
+                        <input type="range" id="volumenCancion" onchange="cambiarVolumen()" step="0.05" min="0" max="1" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/logged_In.js"></script>
+    <script src="js/usuario.js"></script>
+    
+</html>

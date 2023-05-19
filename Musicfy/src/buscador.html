@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title id = "1"></title>
+        <link rel="stylesheet" id='claroscuro' type="text/css" href="style/style_logged_in.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!--LIBRERIA PARA ICONOS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Diseñamos toda la pagina utilizando un grid-->
+        <div class="grid">
+            <!--Esto es la cabecera con sign in y sign up-->
+            <div class="header">
+                <div class="header-left" onclick="goTo_IndexLoggedIn()">
+                    <img class="logo" src="https://logodownload.org/wp-content/uploads/2018/09/youtube-music-logo-4.png" alt="Youtube Music">
+                    <!--Esto es el titulo-->
+                    <h2 id="titulo">Musicfy</h2>
+                </div>
+                <div class="header-right-buscador">
+                    <div class="btn-volver">
+                        <a href="index_logged_in.html" id = "2"></a>
+                    </div>
+                    <input id="searchSong" type="text" placeholder="Buscar"/>
+                    <!--Header de la columna derecha-->
+                    <div class="profile" onclick="desplegable()">
+                        <img id="pfp" src="images/pfp.png" alt="Profile picture">
+                        <ul id="nav">
+                            <li ><a href="cuenta.html" id = "3"></a></li>
+                            <li ><a href="perfil.html" id = "4"></a></li>
+                            <li onclick="alertLogOut()"><a id="cerrar-sesion" ></a></li>
+                            <li><a href="ver_Listas.html" id = "5"></a></li>
+                            <li><a href="https://www.youtube.com/intl/es_us/howyoutubeworks/user-settings/privacy/" id = "7"></a></li>
+                            <li><a href="https://support.google.com/youtube/answer/32050?hl=en&co=GENIE.Platform%3DDesktop" id = "8"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="idiomas">
+                <a href="" id = "11" onclick = "artistasCambioIdioma('Español')"></a></li>
+                <a href="" id = "12" onclick = "artistasCambioIdioma('Ingles')"></a></li>
+            </div>
+                <div class="torso-buscador"> <!-- Aqui tendremos el listado de canciones y los resultados de las busquedas-->
+                    
+                    <div class="migas">
+                        <a href="index_logged_in.html">Inicio > </a><a href="buscador.html">Buscador</a>
+                    </div>
+                    <div class="songs" id="resultadoCanciones">
+                    </div>
+                    <h2 class="tituloSongs"></h2>
+                    <div class="songs" id="resultadoArtistas">
+                    </div>
+                    <h2 class="tituloSongs"></h2>
+                    <div class="songs" id="resultadoUsuarios">
+                    </div>
+                </div>   
+            <div class = "footer">
+                <div id="cancionSonando">
+                    <div id="nowPlaying">Now Playing:</div>
+                        <p id="nameOfSong"></p>
+                </div>
+                <div id="controlesPlay">
+                    <div id="parteArriba">
+                        <button id="footerButton">▶</button>
+                    </div>
+                    <div id="parteAbajo">
+                        <input type="range" id="progresoCancion" value="0" min="0" max="100" step="1">
+                    </div>
+                </div>
+                <div id="controlesSonido">
+                    <div id="sonidoArriba">
+                        <img src="https://w7.pngwing.com/pngs/363/907/png-transparent-computer-icons-volume-others-text-logo-share-icon-thumbnail.png" id="imagenVolumen">
+                    </div>
+                    <div id="sonidoAbajo">
+                        <input type="range" id="volumenCancion" onchange="cambiarVolumen()" step="0.05" min="0" max="1" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/general_logged_in.js"></script>
+    <script src="js/buscador.js"></script>
+
+</html>
